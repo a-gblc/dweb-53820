@@ -1,0 +1,96 @@
+.grid { 
+
+    display : grid;
+    width: 100%;     
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18.75rem 18.75rem;
+    
+}
+
+.smArtista { 
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+    
+    
+    
+}
+    
+div .smArtista {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+    
+}
+    
+.smArtista p {
+    
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+    
+}
+
+.section1 { 
+
+background-color :#FFF27F;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.section2  { 
+
+background-color :#FFF27F;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.section3 { 
+
+background-color :#FFF27F;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.section4 { 
+
+background-color :#FFF27F;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+
+.section1 div h2 {
+
+margin-top: 10px;
+    
+}
+
+.section2 div h2 {
+
+margin-top: 10px;
+
+}
+
+.section3 div h2 {
+
+margin-top: 10px;
+
+}
+
+.section4 div h2 {
+
+margin-top: 10px;
+
+}

@@ -1,0 +1,83 @@
+.formulario {
+
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 1.625rem;
+    font-style: normal;
+    color: rgb(65, 58, 58);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    color:rgba(10, 10, 22, 0.934);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #484e53;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #646c74;
+}
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(46, 46, 194, 0.934);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(240, 238, 238);
+}
+
+.form-group{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:rgb(236, 250, 233);
+    justify-items: center;
+    align-items: center;
+}

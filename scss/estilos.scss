@@ -1,0 +1,431 @@
+
+@import "generales.scss";
+@import "index.scss";
+@import "contacto.scss";
+@import "artistas.scss";
+@import "mixes.scss";
+@import "catalogo.scss";
+
+
+
+main{
+    
+    display: flexbox;
+    /*display-flex: flexbox;*/
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;   
+    font-weight: 500;
+    font-size:2.5rem; 
+    font-style: normal;
+    color:rgba(24, 22, 22, 0.863);;
+}
+
+.textoInicio {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+
+}
+
+h1{
+    margin-left: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size:2.3rem;
+    font-style: normal;
+    color :rgba(24, 22, 22, 0.863);
+    
+}
+
+h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 1.875rem;
+    font-style: normal;
+    color :rgba(24, 22, 22, 0.863);
+    margin-left: 20px;
+
+}
+
+
+p{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 1.375rem;
+    font-style: normal;
+    color :rgba(24, 22, 22, 0.863);
+    margin-left: 20px;
+    
+
+}
+
+div {
+
+display: flex;
+flex-wrap: wrap;
+
+}
+
+
+.texto {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.textoInicio p {
+
+    display: flex;
+    margin-left: 20px;
+    text-align: justify;
+    flex-wrap: wrap;
+
+
+}
+
+main .texto .textInicio {
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+margin-top: 20px;
+margin-bottom: 20px;
+flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+
+.grid {
+grid-template-columns: 1fr;
+}
+
+header {
+
+justify-content: space-around;
+
+}
+
+.encabezado {
+
+justify-content: space-evenly;
+background-color: #c41a7de8;
+
+}
+
+.encabezado h1 {
+
+display: none;
+
+}
+
+.imgPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    
+    .imgPortada img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+
+div .redes {
+
+margin-top: 3px;
+margin-bottom: 3px;
+
+}
+
+
+
+/*div{
+
+width: 100%;
+}*/
+
+p{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+.section1 div h2,
+.section2 div h2,
+.section3 div h2,
+.section4 div h2 {
+margin-top: 0;
+align-items: center;
+text-align: center;
+width: 100%;
+}
+
+div h2 {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+
+
+.smArtista {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+}
+
+.smArtista div {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.smArtista div p{
+
+    width: 100%;
+}
+.imgPortada {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+    
+.imgPortada img {
+max-width: 100%;
+height: auto;
+}
+
+/*p{
+
+margin-right: 3px;
+margin-left: 3px;
+margin-top: 3px;
+margin-bottom: 3px;
+
+}*/
+.redes p{
+
+padding-right: 3px;
+padding-left: 3px;  
+    
+}
+
+.piePagina {
+
+    margin-top: 3px;
+    margin-bottom: 3px;
+    gap: .625rem;
+    background-color: #c41a7de8;
+}
+
+.piePagina .textoPie{
+
+flex-direction: column;
+font-size: 18px;
+font-weight: 500;
+        
+    
+}
+
+h1 {
+
+    display: none;
+}
+
+}
+
+
+@media (max-width:320px) {
+
+header{
+
+
+align-items: center;
+flex-direction: column;
+width: 100%;
+
+    
+}
+
+
+.mer{
+
+width: 100%;
+text-align: center;
+font-size: 20px;
+margin-top: 3px;
+margin-bottom: 3px;
+margin-left: 3px;
+
+    
+
+}
+.navbar {
+
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+
+
+}
+
+.navbar li a{
+
+    flex-direction: column;
+    background-color: rgba(46, 46, 194, 0.934);
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.encabezado{
+
+gap: 3px;
+align-items: center;
+flex-direction: column;
+
+}
+
+
+.encabezado h1 {
+
+display: none;
+
+}
+
+.redes{
+
+align-items: center;
+
+}
+
+
+.redes p{
+
+padding-right: 3px;
+padding-left: 3px;
+
+
+}
+
+.imgPortada {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.imgPortada img {
+max-width: 100%;
+height: auto;
+}
+
+
+main{
+
+justify-content: space-around;
+
+}
+
+
+
+p{
+
+margin-right: 3px;
+margin-left: 3px;
+margin-top: 3px;
+margin-bottom: 3px;
+
+}
+
+
+
+.texto {
+
+flex-direction: column;
+}
+
+
+div {
+
+
+flex-direction: column;
+
+
+}
+
+div .textInicio{
+
+flex-direction: column;
+margin-left: 3px;
+margin-right: 3px;
+align-items: center;
+justify-content: center;
+
+}
+
+.textoInicio p{
+
+    margin-left: 3px;
+    margin-right: 3px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+
+    
+}
+
+
+.piePagina{
+
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+.piePagina .textoPie{
+
+    flex-direction: column;
+    font-size: 18px;
+
+    
+}
+
+.piePagina .textoPie p{
+
+flex-direction: column;
+font-size: 20px;
+
+}
+
+
+}

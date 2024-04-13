@@ -1,0 +1,52 @@
+.grid2{
+
+    display : grid;
+    width: 100%;     
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(10, auto);
+    background-color: #000000;
+    
+    
+    
+    }
+    
+    .gridCatalogo {
+    
+        margin-top: 10px;
+        background-color: #000000d8;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .grid2 .gridCatalogo .textoCatalogo p {
+    
+        color: #bd5417;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    .logoCatalogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        margin-right: 20px;
+        margin-left: 20px;
+        
+    }
+    
+    
+    .logoCatalogo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        background-image: url(..//assets/logo3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
