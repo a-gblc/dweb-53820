@@ -10,3 +10,47 @@
     background-repeat: no-repeat;
     
     }
+
+.textoInicio {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        flex-wrap: wrap;
+    
+    }
+    
+    
+    
+    
+.texto {
+    
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+.textoInicio p {
+    
+        display: flex;
+        margin-left: 20px;
+        text-align: justify;
+        flex-wrap: wrap;
+    
+    
+    }
+    
+main .texto .textInicio {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    
+    }
+    
