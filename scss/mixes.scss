@@ -1,5 +1,16 @@
 .mixes {
 
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
+}
+
+.mixes h2 {
+    width: 100%;
+}
+
+.mixes div {
+
+    display: flex;
+    flex-wrap: wrap;
+    
 }

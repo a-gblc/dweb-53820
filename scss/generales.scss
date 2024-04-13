@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 h1{
     margin-left: 20px;
     font-family: "IBM Plex Mono", monospace;
@@ -107,7 +108,7 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(1, 143, 77, 0.897);
+    background-color: rgba(2, 161, 87, 0.897);
     flex-wrap: wrap;
 }
 
@@ -141,14 +142,39 @@ text-decoration: none;
 main{
     
     display: flexbox;
-    /*display-flex: flexbox;*/
-    flex-wrap: wrap;
     width: 100%;
     height: auto;   
     font-weight: 500;
     font-size:2.5rem; 
     font-style: normal;
     color:rgba(24, 22, 22, 0.863);;
+}
+
+main .imgPortada {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+    
+}
+
+
+.seccionBanner{
+
+    display: flexbox;
+    flex-direction: row;
+    width: auto;
+
+}
+
+.banner {
+
+    display: flex;
+    flex-direction: row;
+
+
 }
 
 .piePagina {
@@ -162,6 +188,8 @@ main{
     background-color: rgba(1, 143, 77, 0.897);
 
 }
+
+
 
 .piePagina .textoPie {
     display: flex;

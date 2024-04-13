@@ -1,15 +1,18 @@
 .imgPortada{
 
-    display: flex;
-    flex-wrap: wrap;
+    display: flexbox;
     flex-direction: row;
-    background-image: url('../assets/portada_bahia.jpg');
-    background-size: 100% 100%;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+}
     
-    }
+.imgPortada img {
+
+width: 100%;
+margin: 0%;
+padding: 0%;
+
+}
+    
 
 .textoInicio {
 
@@ -21,7 +24,7 @@
         margin-right: 20px;
         flex-wrap: wrap;
     
-    }
+}
     
     
     
