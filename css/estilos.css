@@ -1,17 +1,596 @@
-/* Error: Expected ".
- *   ,
- * 8 | @import "mediaquery.scss;
- *   |                          ^
- *   '
- *   scss\estilos.scss 8:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Expected ".\a   \2577 \a 8 \2502  @import "mediaquery.scss;\a   \2502                           ^\a   \2575 \a   scss\\estilos.scss 8:26  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+h1 {
+  margin-left: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 2.3rem;
+  font-style: normal;
+  color: rgba(24, 22, 22, 0.863);
+}
+
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 1.875rem;
+  font-style: normal;
+  color: rgba(24, 22, 22, 0.863);
+  margin-left: 20px;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 1.375rem;
+  font-style: normal;
+  color: rgba(24, 22, 22, 0.863);
+  margin-left: 20px;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(48, 48, 204, 0.934);
+  color: rgb(236, 250, 233);
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.navbar li a {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(236, 250, 233);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 1.25rem;
+  font-style: normal;
+  flex-wrap: wrap;
+}
+
+.mer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: rgb(236, 250, 233);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 1.5625rem;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(1, 143, 77, 0.897);
+  flex-wrap: wrap;
+}
+
+.encabezado h1 {
+  display: flex;
+  margin-left: 20px;
+  font-size: 1.5625rem;
+  flex-wrap: wrap;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.redes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flexbox;
+  /*display-flex: flexbox;*/
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  font-weight: 500;
+  font-size: 2.5rem;
+  font-style: normal;
+  color: rgba(24, 22, 22, 0.863);
+}
+
+.piePagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(1, 143, 77, 0.897);
+}
+
+.piePagina .textoPie {
+  display: flex;
+  flex-direction: row;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  width: 100%;
+  font-size: 1.625rem;
+  font-style: normal;
+  color: rgba(24, 22, 22, 0.863);
+}
+
+.imgPortada {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-image: url("../assets/portada_bahia.jpg");
+  background-size: 100% 100%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textoInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textoInicio p {
+  display: flex;
+  margin-left: 20px;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+main .texto .textInicio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formulario {
+  display: flex;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-size: 1.625rem;
+  font-style: normal;
+  color: rgb(65, 58, 58);
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.formulario {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  color: rgba(10, 10, 22, 0.934);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+}
+
+button[type=submit] {
+  padding: 10px 20px;
+  background-color: #484e53;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type=submit]:hover {
+  background-color: #646c74;
+}
+
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(46, 46, 194, 0.934);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(240, 238, 238);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: rgb(236, 250, 233);
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 18.75rem 18.75rem;
+}
+
+.smArtista {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+div .smArtista {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.smArtista p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section1 {
+  background-color: #FFF27F;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 {
+  background-color: #FFF27F;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 {
+  background-color: #FFF27F;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4 {
+  background-color: #FFF27F;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 div h2 {
+  margin-top: 10px;
+}
+
+.section2 div h2 {
+  margin-top: 10px;
+}
+
+.section3 div h2 {
+  margin-top: 10px;
+}
+
+.section4 div h2 {
+  margin-top: 10px;
+}
+
+.mixes {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+.grid2 {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(10, auto);
+  background-color: #000000;
+}
+
+.gridCatalogo {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.8470588235);
+  justify-content: center;
+  align-items: center;
+}
+
+.grid2 .gridCatalogo .textoCatalogo p {
+  color: #bd5417;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logoCatalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.logoCatalogo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-image: url(..//assets/logo3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  header {
+    justify-content: space-around;
+  }
+  .encabezado {
+    justify-content: space-evenly;
+    background-color: rgba(196, 26, 125, 0.9098039216);
+  }
+  .encabezado h1 {
+    display: none;
+  }
+  .imgPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .imgPortada img {
+    max-width: 100%;
+    height: auto;
+  }
+  div .redes {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  /*div{
+
+  width: 100%;
+  }*/
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 div h2,
+  .section2 div h2,
+  .section3 div h2,
+  .section4 div h2 {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  div h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .smArtista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .smArtista div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .smArtista div p {
+    width: 100%;
+  }
+  .imgPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgPortada img {
+    max-width: 100%;
+    height: auto;
+  }
+  /*p{
+
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+  }*/
+  .redes p {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  .piePagina {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    gap: 0.625rem;
+    background-color: rgba(196, 26, 125, 0.9098039216);
+  }
+  .piePagina .textoPie {
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  h1 {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mer {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  .navbar li a {
+    flex-direction: column;
+    background-color: rgba(46, 46, 194, 0.934);
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .encabezado {
+    gap: 3px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .encabezado h1 {
+    display: none;
+  }
+  .redes {
+    align-items: center;
+  }
+  .redes p {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+  .imgPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgPortada img {
+    max-width: 100%;
+    height: auto;
+  }
+  main {
+    justify-content: space-around;
+  }
+  p {
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .texto {
+    flex-direction: column;
+  }
+  div {
+    flex-direction: column;
+  }
+  div .textInicio {
+    flex-direction: column;
+    margin-left: 3px;
+    margin-right: 3px;
+    align-items: center;
+    justify-content: center;
+  }
+  .textoInicio p {
+    margin-left: 3px;
+    margin-right: 3px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+  .piePagina {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  .piePagina .textoPie {
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .piePagina .textoPie p {
+    flex-direction: column;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
