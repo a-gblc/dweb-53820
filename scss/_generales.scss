@@ -9,11 +9,7 @@
 
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+    @include flexHeader;
     background-color: map-get($backgroundColor , fondoHeader);
     color: map-get($colorFuente , colorHeader );
     box-sizing: border-box; 
@@ -39,10 +35,7 @@ nav {
 }  
 
 .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexNav;
         gap: 2.5rem;
         margin-right: 20px;
         flex-wrap: wrap;
@@ -86,12 +79,9 @@ nav {
             flex-wrap: wrap;
         } .redes {
     
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center; 
+            @include flexNav;
             margin-right: 20px;
-            flex-wrap: wrap;    
+
         } .redes a {
             display: flex;
             justify-content: center;
@@ -182,12 +172,7 @@ ul {
 }
 
 .piePagina {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    @include flexPie_pagina;
     gap: 20px;
     background-color: $background-color-foooter;
     

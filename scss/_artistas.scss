@@ -13,17 +13,30 @@
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-    
-    
-    
+
 }
-    
+
+
+.igArtista img {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;  
+
+}     
+        
 div .smArtista {
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
     
 }
+
+/*.smArtista p a .igArtista {
+
+    align-items: center;
+}*/
     
 .smArtista p {
     
@@ -35,14 +48,19 @@ flex-direction: row;
 
 .section1 { 
 
-background-color :#FFF27F;
+background-color :#fcf08b;
 align-items: center;
 justify-content: center;
 
 }
 
+.section2{
 
-.section2  { 
+@extend .section1;
+
+}
+
+/*.section2  { 
 
 background-color :#FFF27F;
 align-items: center;
@@ -50,22 +68,19 @@ justify-content: center;
 
 
 }
-
+*/
 .section3 { 
 
-background-color :#FFF27F;
-align-items: center;
-justify-content: center;
+@extend .section1;
+background-color :#f3ec8cee;
+
 
 
 }
 
 .section4 { 
 
-background-color :#FFF27F;
-align-items: center;
-justify-content: center;
-
+@extend .section3;
 
 }
 

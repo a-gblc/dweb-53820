@@ -10,9 +10,10 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: space-between;
-  background-color: rgba(49, 49, 221, 0.836);
+  gap: 20px;
+  width: 100%;
+  background-color: rgba(27, 27, 109, 0.836);
   color: rgb(238, 250, 235);
   box-sizing: border-box;
 }
@@ -40,6 +41,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2.5rem;
   margin-right: 20px;
   flex-wrap: wrap;
@@ -84,8 +86,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
   flex-wrap: wrap;
+  margin-right: 20px;
 }
 .encabezado .redes a {
   display: flex;
@@ -194,7 +196,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
-.textoInicio .textoInicio p {
+.textoInicio .texto .textoInicio p {
   display: flex;
   margin-left: 20px;
   text-align: justify;
@@ -277,7 +279,7 @@ button[type=submit]:hover {
   align-items: center;
   width: 400px;
   padding: 20px;
-  background-color: rgba(46, 46, 194, 0.934);
+  background-color: rgba(27, 27, 109, 0.836);
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(240, 238, 238);
 }
@@ -305,43 +307,49 @@ button[type=submit]:hover {
   flex-direction: row;
 }
 
+.igArtista img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
 div .smArtista {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
+/*.smArtista p a .igArtista {
+
+    align-items: center;
+}*/
 .smArtista p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.section1 {
-  background-color: #FFF27F;
+.section1, .section3, .section4, .section2 {
+  background-color: #fcf08b;
   align-items: center;
   justify-content: center;
 }
 
-.section2 {
-  background-color: #FFF27F;
-  align-items: center;
-  justify-content: center;
+/*.section2  { 
+
+background-color :#FFF27F;
+align-items: center;
+justify-content: center;
+
+
+}
+*/
+.section3, .section4 {
+  background-color: rgba(243, 236, 140, 0.9333333333);
 }
 
-.section3 {
-  background-color: #FFF27F;
-  align-items: center;
-  justify-content: center;
-}
-
-.section4 {
-  background-color: #FFF27F;
-  align-items: center;
-  justify-content: center;
-}
-
-.section1 div h2 {
+.section1 div h2, .section2 div h2, .section3 div h2, .section4 div h2 {
   margin-top: 10px;
 }
 
@@ -349,7 +357,7 @@ div .smArtista {
   margin-top: 10px;
 }
 
-.section3 div h2 {
+.section3 div h2, .section4 div h2 {
   margin-top: 10px;
 }
 
