@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background-color: map-get($backgroundColor , fondoHeader);
+    color: map-get($colorFuente , colorHeader );
+    box-sizing: border-box; 
+    
+    .mer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        color: $color-fuente;
+        font-family: $fuente;
+        font-weight: 200;
+        font-size: 1.875rem;
+        font-style: normal;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}  
+
+.navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        margin-right: 20px;
+        flex-wrap: wrap;
+        text-decoration: none;   
+
+        li a {
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: $color-fuente;
+            font-family: $fuente;
+            font-weight: 200;
+            font-size: 1.25rem;
+            font-style: normal;
+            flex-wrap: wrap;
+        }
+    }
+    
+    main{
+        
+        display: flexbox;
+        width: 100%;
+        height: auto;   
+        font-weight: 500;
+        font-size:2.5rem; 
+        font-style: normal;
+        /*color:rgba(112, 14, 14, 0.863); */
+    }
+        
+    .encabezado {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $background-color-h1;
+            flex-wrap: wrap;
+        .encabezado h1 {
+        
+            display: flex;
+            margin-left: 20px;
+            flex-wrap: wrap;
+        } .redes {
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+            margin-right: 20px;
+            flex-wrap: wrap;    
+        } .redes a {
+            display: flex;
+            justify-content: center;
+            align-items: center;} 
+    }
+
+h1{
+    margin-left: 20px;
+    font-family: $fuente;
+    font-weight: 400;
+    font-size:30px;
+    font-style: normal;
+    color: $color-fuente-h1;
+    
+}
+
+h2 {
+    font-family: $fuente;
+    font-weight: 400;
+    font-size: 1.875rem;
+    font-style: normal;
+    color :rgba(24, 22, 22, 0.863);
+    margin-left: 20px;
+
+}
+
+
+p{
+    font-family: $fuente;
+    font-weight: 400;
+    font-size: 1.375rem;
+    font-style: normal;
+    color :$color-fuente-h2;
+    margin-left: 20px;
+    
+
+}
+
+div {
+
+display: flex;
+flex-wrap: wrap;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+    
+    .imgPortada{
+
+        display: flexbox;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .imgPortada img {
+        
+        display: flex;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }  
+        
+    .imgPortada {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    
+
+
+.seccionBanner{
+
+    display: flexbox;
+    flex-direction: row;
+    width: auto; .banner {
+
+    display: flex;
+    flex-direction: row;
+}
+
+}
+
+.piePagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: $background-color-foooter;
+    
+    .piePagina .textoPie {
+    display: flex;
+    flex-direction: row;
+    font-family: $fuente;
+    font-weight: 300;
+    width: 100%;
+    font-size: 1.625rem;
+    font-style: normal;
+    color: $color-fuente-footer;
+
+}
+}
