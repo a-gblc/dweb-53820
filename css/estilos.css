@@ -1,4 +1,5 @@
 /*$background-color: rgba(48, 48, 204, 0.934);*/
+/*test de aplicacion**/
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&display=swap");
 * {
   margin: 0;
@@ -14,20 +15,27 @@ header {
   gap: 20px;
   width: 100%;
   background-color: rgba(27, 27, 109, 0.836);
-  color: rgb(238, 250, 235);
+  color: rgb(238, 255, 234);
   box-sizing: border-box;
 }
 header .mer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  /*@include flexVariables (flex, row, wrap, center, center, none);*/
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
   font-size: 1.875rem;
   font-style: normal;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
   margin-left: 20px;
 }
 
@@ -48,15 +56,20 @@ nav {
   text-decoration: none;
 }
 .navbar li a {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  /*justify-content: center;
+  align-items: center;*/
   text-decoration: none;
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
   font-size: 1.25rem;
   font-style: normal;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 main {
@@ -73,7 +86,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(2, 161, 87, 0.897);
+  background-color: rgba(82, 184, 136, 0.897);
   flex-wrap: wrap;
 }
 .encabezado .encabezado h1 {
@@ -169,7 +182,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: rgba(2, 161, 87, 0.897);
+  background-color: rgba(82, 184, 136, 0.897);
 }
 .piePagina .piePagina .textoPie {
   display: flex;
@@ -437,8 +450,13 @@ justify-content: center;
   }
   .imgPortada {
     display: flex;
+    flex-direction: row;
+    flex-wrap: none;
     justify-content: center;
     align-items: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
     width: 100%;
   }
   .imgPortada img {
@@ -454,37 +472,62 @@ justify-content: center;
   width: 100%;
   }*/
   p {
-    display: flex;
+    /*display: flex;
     align-items: center;
+    justify-content: center;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
     justify-content: center;
+    align-items: center;
   }
   .section1 div h2,
   .section2 div h2,
   .section3 div h2,
   .section4 div h2 {
     margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    /*align-items: center;
+    text-align: center;*/
     width: 100%;
   }
   div h2 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: none;
     justify-content: center;
+    align-items: center;
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
     width: 100%;
   }
   .smArtista {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: none;
     justify-content: center;
+    align-items: center;
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
   }
   .smArtista div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: none;
     justify-content: center;
+    align-items: center;
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
   }
   .smArtista div p {
     width: 100%;
@@ -540,10 +583,12 @@ justify-content: center;
     margin-left: 3px;
   }
   .navbar {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-wrap: none;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-right: 3px;
@@ -557,8 +602,13 @@ justify-content: center;
   }
   .encabezado {
     gap: 3px;
-    align-items: center;
+    display: flex;
     flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    /*align-items: center;
+    flex-direction: column;*/
   }
   .encabezado h1 {
     display: none;

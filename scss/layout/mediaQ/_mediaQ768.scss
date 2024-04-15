@@ -1,0 +1,157 @@
+@media (max-width:768px) {
+
+    .grid {
+    grid-template-columns: 1fr;
+    }
+    
+    header {
+    
+    justify-content: space-around;
+    
+    }
+    
+    .encabezado {
+    
+    justify-content: space-evenly;
+    background-color: #c41a7de8;
+    
+    }
+    
+    .encabezado h1 {
+    
+    display: none;
+    
+    }
+    
+    .imgPortada {
+        @include flexMediaq (flex, row, none, center, center);
+        /*display: flex;
+        justify-content: center;
+        align-items: center;*/
+        width: 100%;
+        }
+        
+        .imgPortada img {
+        max-width: 100%;
+        height: auto;
+        }
+        
+    
+    div .redes {
+    
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+    }
+    
+    
+    
+    /*div{
+    
+    width: 100%;
+    }*/
+    
+    p{
+    
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    @include flexMediaq (flex, row, none, center, center);
+    
+    
+    }
+    
+    .section1 div h2,
+    .section2 div h2,
+    .section3 div h2,
+    .section4 div h2 {
+    margin-top: 0;
+    @include flexMediaq (flex, row, none, center, center);
+    /*align-items: center;
+    text-align: center;*/
+    width: 100%;
+    }
+    
+    div h2 {
+    
+    @include flexMediaq (flex, row, none, center, center);
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
+    width: 100%;
+    }
+    
+    
+    .smArtista {
+    
+    @include flexMediaq (flex, row, none, center, center);
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
+    
+    }
+    
+    .smArtista div {
+        @include flexMediaq (flex, row, none, center, center);
+        /*display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;*/
+    
+    }
+    
+    .smArtista div p{
+    
+        width: 100%;
+    }
+    .imgPortada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+        
+    .imgPortada img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    /*p{
+    
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+    }*/
+    .redes p{
+    
+    padding-right: 3px;
+    padding-left: 3px;  
+        
+    }
+    
+    .piePagina {
+    
+        margin-top: 3px;
+        margin-bottom: 3px;
+        gap: .625rem;
+        background-color: #c41a7de8;
+    }
+    
+    .piePagina .textoPie{
+    
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+            
+        
+    }
+    
+    h1 {
+    
+        display: none;
+    }
+    
+    }
