@@ -24,7 +24,7 @@
     }
     
     .imgPortada {
-        @include flexMediaq (flex, row, none, center, center);
+        @include flexMediaq (flex, column, nowrap, center, center);
         /*display: flex;
         justify-content: center;
         align-items: center;*/
@@ -154,4 +154,13 @@
         display: none;
     }
     
+    .banner {
+
+        
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+
     }

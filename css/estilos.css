@@ -225,6 +225,10 @@ main .texto .textInicio {
   flex-wrap: wrap;
 }
 
+.catalogoFondo {
+  background-color: rgba(122, 180, 153, 0.897);
+}
+
 .formulario {
   display: flex;
   font-family: "IBM Plex Mono", monospace;
@@ -450,8 +454,8 @@ justify-content: center;
   }
   .imgPortada {
     display: flex;
-    flex-direction: row;
-    flex-wrap: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     /*display: flex;
@@ -567,6 +571,12 @@ justify-content: center;
   h1 {
     display: none;
   }
+  .banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
 }
 @media (max-width: 320px) {
   header {
@@ -577,10 +587,25 @@ justify-content: center;
   .mer {
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 3px;
+  }
+  header .mer {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 0px;
+    /*display: block;*/
+    /*max-width: 100%;*/
+  }
+  div .mer {
+    justify-content: center;
+    align-items: center;
+    margin-left: none;
   }
   .navbar {
     display: flex;
@@ -600,6 +625,10 @@ justify-content: center;
     margin-top: 3px;
     margin-bottom: 3px;
   }
+  div .encabezado {
+    align-items: center;
+    justify-content: center;
+  }
   .encabezado {
     gap: 3px;
     display: flex;
@@ -614,7 +643,7 @@ justify-content: center;
     display: none;
   }
   .redes {
-    align-items: center;
+    align-items: space-evenly;
   }
   .redes p {
     padding-right: 3px;
@@ -632,47 +661,83 @@ justify-content: center;
   main {
     justify-content: space-around;
   }
-  p {
-    margin-right: 3px;
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
-  .texto {
-    flex-direction: column;
-  }
-  div {
-    flex-direction: column;
-  }
-  div .textInicio {
-    flex-direction: column;
-    margin-left: 3px;
-    margin-right: 3px;
-    align-items: center;
-    justify-content: center;
-  }
-  .textoInicio p {
-    margin-left: 3px;
-    margin-right: 3px;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-  }
-  .piePagina {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-right: 3px;
-  }
-  .piePagina .textoPie {
-    flex-direction: column;
-    font-size: 18px;
-  }
-  .piePagina .textoPie p {
-    flex-direction: column;
-    font-size: 20px;
-  }
+}
+.texto {
+  flex-direction: column;
+}
+
+.textInicio {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*margin-top: 20px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;*/
+}
+
+div {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div .textInicio {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.textoInicio p {
+  /*margin-left: 3px;
+  margin-right: 3px;*/
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+p {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+.encabezado .redes {
+  display: flex;
+  flex-direction: row;
+  align-items: self-end;
+}
+.encabezado .redes .piePagina {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+.encabezado .redes .piePagina .textoPie {
+  flex-direction: column;
+  font-size: 18px;
+}
+.encabezado .redes .piePagina .textoPie p {
+  flex-direction: column;
+  font-size: 20px;
+}
+.encabezado .redes .banner {
+  display: none;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.encabezado .redes div .banner {
+  height: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */
