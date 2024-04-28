@@ -12,31 +12,30 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  /*gap: 20px;*/
   width: 100%;
+  font-size: 20px;
   background-color: rgba(27, 27, 109, 0.836);
   color: rgb(238, 255, 234);
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
 }
 header .mer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: none;
-  /*@include flexVariables (flex, row, wrap, center, center, none);*/
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;*/
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
-  font-size: 1.875rem;
+  font-weight: 300;
+  font-size: 25px;
   font-style: normal;
-  /*justify-content: center;
-  align-items: center;*/
   margin-left: 20px;
+  margin-top: 5px;
+  padding: 0 10px;
 }
 
 nav {
@@ -61,12 +60,10 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /*justify-content: center;
-  align-items: center;*/
   text-decoration: none;
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.25rem;
   font-style: normal;
   /*flex-wrap: wrap;*/
@@ -79,7 +76,6 @@ main {
   font-weight: 500;
   font-size: 2.5rem;
   font-style: normal;
-  /*color:rgba(112, 14, 14, 0.863); */
 }
 
 .encabezado {
@@ -88,6 +84,9 @@ main {
   justify-content: space-between;
   background-color: rgba(122, 180, 153, 0.897);
   flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+  /*position : fixed;*/
 }
 .encabezado .encabezado h1 {
   display: flex;
@@ -101,8 +100,9 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin-right: 20px;
+  gap: 5px;
 }
-.encabezado .redes a {
+.encabezado .redes p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +112,7 @@ h1 {
   margin-left: 20px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 21px;
   font-style: normal;
   color: rgba(31, 28, 28, 0.863);
 }
@@ -120,19 +120,28 @@ h1 {
 h2 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  font-size: 1.875rem;
+  font-size: 18px;
   font-style: normal;
   color: rgba(24, 22, 22, 0.863);
   margin-left: 20px;
 }
 
 p {
+  display: flex;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 17px;
   font-style: normal;
   color: rgba(31, 28, 28, 0.863);
   margin-left: 20px;
+  align-self: left;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div {
@@ -145,7 +154,7 @@ ul {
 }
 
 .imgPortada {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   width: 100%;
 }
@@ -155,19 +164,16 @@ ul {
   width: 100%;
   margin: 0%;
   padding: 0%;
-}
-
-.imgPortada {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
+  height: auto;
+  overflow: hidden;
+  align-self: flex-start;
 }
 
 .seccionBanner {
   display: flexbox;
   flex-direction: row;
   width: auto;
+  margin-top: 20px;
 }
 .seccionBanner .banner {
   display: flex;
@@ -184,36 +190,27 @@ ul {
   gap: 20px;
   background-color: rgba(122, 180, 153, 0.897);
 }
-.piePagina .piePagina .textoPie {
+
+.piePagina .textoPie {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
-  font-size: 1.625rem;
+  font-size: 20px;
   font-style: normal;
   color: rgba(31, 28, 28, 0.863);
 }
 
-.textoInicio {
+.redes_footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  flex-wrap: wrap;
-}
-.textoInicio .texto {
-  display: flex;
-  flex-wrap: wrap;
-}
-.textoInicio .texto .textoInicio p {
-  display: flex;
-  margin-left: 20px;
-  text-align: justify;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  /*width: 100%;*/
 }
 
 main .texto .textInicio {
@@ -223,6 +220,84 @@ main .texto .textInicio {
   margin-top: 20px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+div .textInicio {
+  width: 100%;
+  display: flex;
+  margin-right: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.texto .textoInicio p {
+  display: flex;
+  text-align: justify;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.videoInicio {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  /*grid-template-rows: 500px 500px;*/
+  /*margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;*/
+}
+.videoInicio .divVideo {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+/*.textoDos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-end;*/
+.textoIniciodos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.textoIniciodos p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;*/
+  flex-wrap: wrap;
+  text-align: left;
+  margin-right: 20px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .catalogoFondo {
@@ -328,7 +403,10 @@ button[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  /*margin-left: 20px;*/
+  margin: 5px;
 }
 
 div .smArtista {
@@ -383,8 +461,7 @@ justify-content: center;
 }
 
 .mixes {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .mixes h2 {
@@ -415,7 +492,7 @@ justify-content: center;
 .grid2 .gridCatalogo .textoCatalogo p {
   color: #bd5417;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -636,8 +713,6 @@ justify-content: center;
     flex-wrap: none;
     justify-content: center;
     align-items: center;
-    /*align-items: center;
-    flex-direction: column;*/
   }
   .encabezado h1 {
     display: none;

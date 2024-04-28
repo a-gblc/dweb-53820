@@ -1,26 +1,4 @@
-    
 
-.textoInicio {
-
-        @include flexTexto_inico;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        flex-wrap: wrap;
-    .texto {
-    
-        display: flex;
-        flex-wrap: wrap;
-        .textoInicio p {
-    
-        display: flex;
-        margin-left: 20px;
-        text-align: justify;
-        flex-wrap: wrap;
-        }
-    }
-    
-}
 main .texto .textInicio {
     
     display: flex;
@@ -29,6 +7,94 @@ main .texto .textInicio {
     margin-top: 20px;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    
+    overflow: hidden;
 }
+
+div .textInicio{
+
+width: 100%;
+display: flex;
+margin-right: 20px;
+
+}
+
+
+.texto {
     
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        .textoInicio p {
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+        @include flexTexto_inico;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        overflow: hidden;       
+
+        
+
+        }
+
+        
+    }
+
+.videoInicio {
+
+
+    display : grid;
+    width: 100%;     
+    height: auto;
+    grid-template-columns: 50% 50%;
+    /*grid-template-rows: 500px 500px;*/
+    /*margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;*/ .divVideo {
+
+    width: 100%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+}
+
+/*.textoDos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-end;*/
+    .textoIniciodos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden; 
+    }
+        
+        .textoIniciodos p {
+
+        @include flexTexto_inico;
+        /*margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;*/
+        flex-wrap: wrap;
+        text-align: left;
+        margin-right: 20px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+
+}
+
+
+
+

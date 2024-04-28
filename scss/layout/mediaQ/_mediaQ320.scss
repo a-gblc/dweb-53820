@@ -13,7 +13,7 @@
 
     
     
-    .mer{
+.mer{
     
     width: 100%;
     text-align: center;
@@ -71,8 +71,6 @@
     
     gap: 3px;
     @include flexMediaq (flex, column, none, center, center);
-    /*align-items: center;
-    flex-direction: column;*/
     
     }
     
