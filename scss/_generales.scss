@@ -26,7 +26,7 @@ header {
         @include flexVariables (flex, row, wrap, space-between, center, none);
         color: $color-fuente;
         font-family: $fuente;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 25px;
         font-style: normal;
         margin-left: 20px;
@@ -54,7 +54,7 @@ nav {
             text-decoration: none;
             color: $color-fuente;
             font-family: $fuente;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 1.25rem;
             font-style: normal;
             /*flex-wrap: wrap;*/

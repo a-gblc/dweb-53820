@@ -30,7 +30,7 @@ header .mer {
   gap: none;
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 25px;
   font-style: normal;
   margin-left: 20px;
@@ -63,7 +63,7 @@ nav {
   text-decoration: none;
   color: rgb(238, 250, 235);
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
   font-style: normal;
   /*flex-wrap: wrap;*/
