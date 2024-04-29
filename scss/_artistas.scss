@@ -49,9 +49,26 @@ flex-direction: row;
     
 }
 
+.bio {
+
+    margin-bottom: 20px;
+}
+.bio .bioArt {
+
+    color: $color-fuente-inicio;
+    @include flexTexto_inico;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .section1 { 
 
-background-color :#fcf08b;
+background-color :#838277;
 align-items: center;
 justify-content: center;
 
@@ -75,7 +92,7 @@ justify-content: center;
 .section3 { 
 
 @extend .section1;
-background-color :#f3ec8cee;
+background-color :#838277;
 
 
 

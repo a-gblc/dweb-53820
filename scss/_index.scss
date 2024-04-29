@@ -13,6 +13,7 @@ main .texto .textInicio {
 div .textInicio{
 
 width: 100%;
+height: 300px;
 display: flex;
 margin-right: 20px;
 
@@ -22,10 +23,18 @@ margin-right: 20px;
 .texto {
     
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         overflow: hidden;
         margin-right: 20px;
+        background-image: url(../assets/central_termica.jpeg);
+        background-position: center center;
+        background-size: 100% 706px;
+        background-repeat: no-repeat;
+        height: 706px;
+        
+
         .textoInicio p {
         display: flex;
         text-align: justify;
@@ -35,22 +44,87 @@ margin-right: 20px;
         margin-bottom: 20px;
         margin-right: 20px;
         margin-left: 20px;
-        overflow: hidden;       
-
-        
+        font-size: 45px;
+        color: $color-fuente-inicio;
+        font-weight: 450;
 
         }
-
+    }
+        .textoInicioParrafo p {
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+        color: $color-fuente-inicio;
+        @include flexTexto_inico;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 30px;
+        font-weight: 450;
         
+} 
+
+    .terceraSeccion{
+
+        display : grid;
+        width: 100%;     
+        height: auto;
+        grid-template-columns: 50% 50%;
+        background-color: $background-color-tercer;
+        
+        /*display: flex;
+        flex-direction: row;*/
+    
+
+    }
+
+    .divh3{
+
+    display: flex;
+    flex-direction: row;
+
+    }
+
+    h3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: flex-start;
+        width: 100%;
+        margin-left: 20px;
+        font-family: $fuente;
+        font-weight: 500;
+        font-size:23px;
+        font-style: normal;
+        color: $color-fuente-h3;
+        /*background-color: $color-fuente-footer;*/
+        
+    }
+    
+    h4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: flex-end;
+        font-family: $fuente;
+        font-weight: 500;
+        font-size: 21px;
+        font-style: normal;
+        color: $color-fuente-h3;
+        margin-left: 20px;
     }
 
 .videoInicio {
 
 
     display : grid;
-    width: 100%;     
+    width: 100%;
+    flex-direction: row;
     height: auto;
     grid-template-columns: 50% 50%;
+    background-color: $background-color-tercer;
     /*grid-template-rows: 500px 500px;*/
     /*margin-bottom: 20px;
     margin-right: 20px;
@@ -62,21 +136,19 @@ margin-right: 20px;
 }
 }
 
-/*.textoDos {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-self: flex-end;*/
     .textoIniciodos {
         width: 100%;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-right: 20px;
+        margin-bottom: 20px;
         flex-direction: row;
         flex-wrap: wrap;
         overflow: hidden; 
+
     }
         
         .textoIniciodos p {
@@ -90,6 +162,11 @@ margin-right: 20px;
         margin-right: 20px;
         width: 100%;
         height: auto;
+        font-family: $fuente;
+        font-weight: 500;
+        font-size: 21px;
+        font-style: normal;
+        color: $color-fuente-h3;
         overflow: hidden;
 
 

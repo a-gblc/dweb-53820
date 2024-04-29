@@ -1,3 +1,29 @@
+
+.imgPortada2{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+
+    
+
+}
+
+.imgPortada2 img {
+    
+    display: flex;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    overflow: hidden;
+    align-self: flex-start;
+    height: 500px;
+} 
+
+
+
 .grid2{
 
     display : grid;
@@ -26,6 +52,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 100%;
+        font-size: 20px;
     
     }
     

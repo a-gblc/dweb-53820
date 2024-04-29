@@ -15,7 +15,7 @@ header {
   /*gap: 20px;*/
   width: 100%;
   font-size: 20px;
-  background-color: rgba(27, 27, 109, 0.836);
+  background-color: rgba(98, 15, 233, 0.836);
   color: rgb(238, 255, 234);
   box-sizing: border-box;
   position: sticky;
@@ -82,11 +82,10 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgba(122, 180, 153, 0.897);
+  background-color: rgba(98, 15, 233, 0.836);
   flex-wrap: wrap;
   width: 100%;
   gap: 5px;
-  /*position : fixed;*/
 }
 .encabezado .encabezado h1 {
   display: flex;
@@ -112,18 +111,18 @@ h1 {
   margin-left: 20px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 25px;
   font-style: normal;
-  color: rgba(31, 28, 28, 0.863);
+  color: rgb(238, 250, 235);
 }
 
 h2 {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
   color: rgba(24, 22, 22, 0.863);
-  margin-left: 20px;
+  /*margin-left: 20px;*/
 }
 
 p {
@@ -188,7 +187,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: rgba(122, 180, 153, 0.897);
+  background-color: rgba(98, 15, 233, 0.836);
 }
 
 .piePagina .textoPie {
@@ -200,7 +199,7 @@ ul {
   width: 100%;
   font-size: 20px;
   font-style: normal;
-  color: rgba(31, 28, 28, 0.863);
+  color: rgb(238, 250, 235);
 }
 
 .redes_footer {
@@ -225,16 +224,23 @@ main .texto .textInicio {
 
 div .textInicio {
   width: 100%;
+  height: 300px;
   display: flex;
   margin-right: 20px;
 }
 
 .texto {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
   margin-right: 20px;
+  background-image: url(../assets/central_termica.jpeg);
+  background-position: center center;
+  background-size: 100% 706px;
+  background-repeat: no-repeat;
+  height: 706px;
 }
 .texto .textoInicio p {
   display: flex;
@@ -248,14 +254,79 @@ div .textInicio {
   margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
-  overflow: hidden;
+  font-size: 45px;
+  color: rgba(241, 146, 22, 0.966);
+  font-weight: 450;
+}
+
+.textoInicioParrafo p {
+  display: flex;
+  text-align: justify;
+  flex-wrap: wrap;
+  color: rgba(241, 146, 22, 0.966);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 450;
+}
+
+.terceraSeccion {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 50% 50%;
+  background-color: rgba(31, 28, 28, 0.863);
+  /*display: flex;
+  flex-direction: row;*/
+}
+
+.divh3 {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: 100%;
+  margin-left: 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 23px;
+  font-style: normal;
+  color: rgba(204, 47, 133, 0.863);
+  /*background-color: $color-fuente-footer;*/
+}
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-self: flex-end;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 21px;
+  font-style: normal;
+  color: rgba(204, 47, 133, 0.863);
+  margin-left: 20px;
 }
 
 .videoInicio {
   display: grid;
   width: 100%;
+  flex-direction: row;
   height: auto;
   grid-template-columns: 50% 50%;
+  background-color: rgba(31, 28, 28, 0.863);
   /*grid-template-rows: 500px 500px;*/
   /*margin-bottom: 20px;
   margin-right: 20px;
@@ -267,18 +338,14 @@ div .textInicio {
   margin-left: 20px;
 }
 
-/*.textoDos {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-self: flex-end;*/
 .textoIniciodos {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  margin-bottom: 20px;
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
@@ -297,11 +364,16 @@ div .textInicio {
   margin-right: 20px;
   width: 100%;
   height: auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 21px;
+  font-style: normal;
+  color: rgba(204, 47, 133, 0.863);
   overflow: hidden;
 }
 
 .catalogoFondo {
-  background-color: rgba(122, 180, 153, 0.897);
+  background-color: rgba(98, 15, 233, 0.836);
 }
 
 .formulario {
@@ -425,8 +497,27 @@ div .smArtista {
   flex-direction: row;
 }
 
+.bio {
+  margin-bottom: 20px;
+}
+
+.bio .bioArt {
+  color: rgba(241, 146, 22, 0.966);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .section1, .section3, .section4, .section2 {
-  background-color: #fcf08b;
+  background-color: #838277;
   align-items: center;
   justify-content: center;
 }
@@ -441,7 +532,7 @@ justify-content: center;
 }
 */
 .section3, .section4 {
-  background-color: rgba(243, 236, 140, 0.9333333333);
+  background-color: #838277;
 }
 
 .section1 div h2, .section2 div h2, .section3 div h2, .section4 div h2 {
@@ -473,6 +564,24 @@ justify-content: center;
   /*flex-wrap: wrap;*/
 }
 
+.imgPortada2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+}
+
+.imgPortada2 img {
+  display: flex;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  height: auto;
+  overflow: hidden;
+  align-self: flex-start;
+  height: 500px;
+}
+
 .grid2 {
   display: grid;
   width: 100%;
@@ -494,6 +603,7 @@ justify-content: center;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  font-size: 20px;
 }
 
 .logoCatalogo {
@@ -737,6 +847,10 @@ justify-content: center;
     justify-content: space-around;
   }
 }
+h3 {
+  flex-direction: column;
+}
+
 .texto {
   flex-direction: column;
 }
@@ -745,10 +859,6 @@ justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*margin-top: 20px;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  margin-left: 15px;*/
 }
 
 div {
@@ -808,7 +918,6 @@ p {
   display: none;
   width: 100%;
   height: auto;
-  display: block;
 }
 .encabezado .redes div .banner {
   height: auto;

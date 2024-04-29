@@ -83,7 +83,6 @@ nav {
             width: 100%;
             gap: 5px;
             
-            /*position : fixed;*/
         .encabezado h1 {
         
             display: flex;
@@ -110,7 +109,7 @@ h1{
     margin-left: 20px;
     font-family: $fuente;
     font-weight: 400;
-    font-size:21px;
+    font-size:25px;
     font-style: normal;
     color: $color-fuente-h1;
     
@@ -119,10 +118,10 @@ h1{
 h2 {
     font-family: $fuente;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     font-style: normal;
     color :rgba(24, 22, 22, 0.863);
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 
 }
 
